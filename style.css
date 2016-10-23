@@ -3,8 +3,21 @@ body, html {
 }
 
 .fixed.menu {
-  padding: 0.7rem 0 0.7rem 5rem;
+  background: #FFF !important;
 }
+
+@media (min-width: 780px) {
+  .fixed.menu {
+    padding: 0.7rem 0 0.7rem 5rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .fixed.menu {
+    display: none;
+  }
+}
+
 
 .fixed.menu a {
   color: #373737;

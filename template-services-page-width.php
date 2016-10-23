@@ -23,54 +23,57 @@ get_header();
 
           <h3 class="ui blue main header">Our Services</h3>
 
-          <div class="ui three centered cards stackable">
-
-            <div class="ui card">
-              <div class="image">
-                <img src="<?php echo get_template_directory_uri().'/img/default-image/doctors/doctor_02.jpg'; ?>">
+          <div class="ui three special cards">
+            <div class="card">
+              <div class="blurring dimmable image">
+                <div class="ui dimmer">
+                  <div class="content">
+                    <div class="center">
+                      <div class="ui inverted button">View Details</div>
+                    </div>
+                  </div>
+                </div>
+                <img src="<?php echo get_template_directory_uri().'/img/default-image/doctors/medical_services_01.jpg'; ?>">
+                <a class="ui blue bottom attached label">Service (A)</a>
               </div>
               <div class="content">
-                <a class="header">Kristy</a>
-                <div class="meta">
-                  <span class="date">Joined in 2013</span>
-                </div>
-                <div class="description">
-                  Kristy is an art director living in New York.
-                </div>
+                <h6 class="ui header">Short service description here....</h6>
               </div>
             </div>
-
-            <div class="ui card">
-              <div class="image">
-                <img src="<?php echo get_template_directory_uri().'/img/default-image/doctors/doctor_02.jpg'; ?>">
+            <div class="card">
+              <div class="blurring dimmable image">
+                <div class="ui dimmer">
+                  <div class="content">
+                    <div class="center">
+                      <div class="ui inverted button">View Details</div>
+                    </div>
+                  </div>
+                </div>
+                <img src="<?php echo get_template_directory_uri().'/img/default-image/doctors/medical_services_02.jpg'; ?>">
+                <a class="ui blue bottom attached label">Service (B)</a>
               </div>
               <div class="content">
-                <a class="header">Kristy</a>
-                <div class="meta">
-                  <span class="date">Joined in 2013</span>
-                </div>
-                <div class="description">
-                  Kristy is an art director living in New York.
-                </div>
+                <h6 class="ui header">Short service description here....</h6>
               </div>
             </div>
-
-            <div class="ui card">
-              <div class="image">
-                <img src="<?php echo get_template_directory_uri().'/img/default-image/doctors/doctor_05.jpg'; ?>">
+            <div class="card">
+              <div class="blurring dimmable image">
+                <div class="ui dimmer">
+                  <div class="content">
+                    <div class="center">
+                      <div class="ui inverted button">View Details</div>
+                    </div>
+                  </div>
+                </div>
+                <img src="<?php echo get_template_directory_uri().'/img/default-image/doctors/medical_services_04.jpg'; ?>">
+                <a class="ui blue bottom attached label">Service (C)</a>
               </div>
               <div class="content">
-                <a class="header">Kristy</a>
-                <div class="meta">
-                  <span class="date">Joined in 2013</span>
-                </div>
-                <div class="description">
-                  Kristy is an art director living in New York.
-                </div>
+                <h6 class="ui header">Short service description here....</h6>
               </div>
             </div>
-
           </div>
+
 
         </div>
 
@@ -87,7 +90,7 @@ get_header();
 
           <h3 class="ui blue main header">Other Services</h3>
 
-          <div class="ui six doubling stackable cards">
+          <div class="ui six doubling stackable raised link cards">
             <div class="ui card">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri().'/img/default-image/doctors/doctor_02.jpg'; ?>">

@@ -45,7 +45,7 @@ function blank_setup() {
 			'container_class'   => '',
       'items_wrap'        => '<div id="%1$s" class="%2$s">%3$s</div>',
 			'container_id'      => 'bs-example-navbar-collapse-1',
-			'menu_class'        => 'ui stackable fixed menu',
+			'menu_class'        => 'ui secondary pointing stackable fixed menu',
 			'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
 			'walker'            => new wp_bootstrap_navwalker())
 		  );

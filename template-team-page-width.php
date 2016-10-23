@@ -21,7 +21,7 @@ get_header();
 
         <div class="ui very padded text minimal segment">
 
-          <h3 class="ui blue main header">Head of Departments</h3>
+          <h2 class="ui blue main header">Head of Departments</h2>
 
           <div class="ui three cards stackable left-padded">
 

@@ -77,7 +77,8 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			$output .= $indent . '<li' . $id . $value . $class_names .'>';
 
 			$atts = array();
-			$atts['title']  = ! empty( $item->title )	? $item->title	: '';
+      $atts['title']  = ! empty( $item->title )	? $item->title	: '';
+			$atts['class']  = 'ui tiny blue header';
 			$atts['target'] = ! empty( $item->target )	? $item->target	: '';
 			$atts['rel']    = ! empty( $item->xfn )		? $item->xfn	: '';
 

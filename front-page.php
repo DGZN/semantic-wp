@@ -20,9 +20,9 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
         <div class="">
 
-          <div class="ui four centered banner cards">
+          <div class="ui four centered banner stackable cards">
 
-            <div class="banner panel">
+            <div class="ui banner card">
 
                 <i class="fa fa-hospital-o fa-3x" aria-hidden="true"></i>
 
@@ -30,7 +30,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
             </div>
 
-            <div class="banner panel">
+            <div class="ui banner card">
 
               <i class="fa fa-ambulance fa-3x" aria-hidden="true"></i>
 
@@ -38,7 +38,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
             </div>
 
-            <div class="banner panel">
+            <div class="ui banner card">
 
               <i class="fa fa-heartbeat fa-3x" aria-hidden="true"></i>
 
@@ -46,7 +46,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
             </div>
 
-            <div class="banner panel">
+            <div class="ui banner card">
 
               <i class="fa fa-stethoscope fa-3x" aria-hidden="true"></i>
 
@@ -85,69 +85,69 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
       <div class="ui container">
 
-        <div class="ui very padded text minimal segment">
+        <div class="">
 
+          <div class="ui three column stackable grid">
 
-          <div class="ui two column stackable grid">
+            <div class="eleven wide column">
 
-            <div class="ten wide column">
-
-              <h3 class="ui dividing gray header">Our Team</h3>
+              <h3 class="ui blue header">Our Team</h3>
 
               <div class="ui one column grid">
 
                 <div class="column">
 
-                  <img class="ui fluid bordered rounded left floated image" src="<?php echo get_template_directory_uri().'/img/default-image/medical_03.jpg'; ?>">
+                  <h4 class="ui header">Fabulous Introduction</h4>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
 
                 </div>
-
 
               </div>
 
             </div>
 
-            <div class="five wide column">
+            <div class="five wide centered column">
 
               <div class="ui one column grid">
 
                 <div class="column">
 
-                  <h3 class="ui dividing header">Make An Appointment</h3>
+                  <h4 class="ui blue  header">Make An Appointment</h4>
 
                   <div class="ui styled fluid accordion">
                     <div class="active title">
-                      <h4 class="ui header">GENERAL</h4>
+                      <h5 class="ui header">General Appointments</h5>
                     </div>
                     <div class="active content">
 
-                        <h4 class="ui header"> <i class="phone icon"></i>(303) 234-234</h4>
-                        <h4 class="ui header"> <i class="avatar mail icon"></i>Contact@ourhospital.com</h4>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <h6 class="ui header"> <i class="phone icon"></i>(303) 234-234</h6>
+                        <h6 class="ui header"> <i class="avatar mail icon"></i>Contact@ourhospital.com</h6>
 
                     </div>
                     <div class="title">
-                      <h4 class="ui header">SPECIALIST</h4>
+                      <h5 class="ui header">Specialists</h5>
                     </div>
                     <div class="content">
 
-                      <h4 class="ui header"> <i class="black phone icon"></i>(303) 234-234</h4>
-                      <h4 class="ui header"> <i class="black avatar mail icon"></i>Contact@ourhospital.com</h4>
-
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                      <h6 class="ui header"> <i class="black phone icon"></i>(303) 234-234</h6>
+                      <h6 class="ui header"> <i class="black avatar mail icon"></i>Contact@ourhospital.com</h6>
 
                     </div>
                     <div class="title">
-                      <h4 class="ui header">OTHER</h4>
+                      <h5 class="ui header">Other</h5>
                     </div>
                     <div class="content">
-                      <h4 class="ui header"> <i class="black phone icon"></i>(303) 234-234</h4>
-                      <h4 class="ui header"> <i class="black avatar mail icon"></i>Contact@ourhospital.com</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                      <h5 class="ui header"> <i class="black phone icon"></i>(303) 234-234</h5>
+                      <h5 class="ui header"> <i class="black avatar mail icon"></i>Contact@ourhospital.com</h5>
                     </div>
                   </div>
-
 
                 </div>
 
@@ -157,19 +157,37 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
           </div>
 
-          <div class="ui container">
+          <div class="ui three column stackable info grid">
 
-            <div class="ui horizontal segments">
-            <div class="ui very padded segment">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <div class="column">
+
+              <div class="ui padded text segment">
+
+                <h4 class="parallax-quote"> Something Cool </h4>
+
+              </div>
+
             </div>
-            <div class="ui very padded segment">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+            <div class="column">
+
+              <div class="ui padded text segment">
+
+                <h4 class="parallax-quote"> Something Cool </h4>
+
+              </div>
+
             </div>
-            <div class="ui very padded segment">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+            <div class="column">
+
+              <div class="ui padded text segment">
+
+                <h4 class="parallax-quote"> Something Cool </h4>
+
+              </div>
+
             </div>
-          </div>
 
           </div>
 
@@ -282,6 +300,7 @@ get_footer();
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 2rem 0 2rem 0;
 }
 
 .parallax-quote {
@@ -295,6 +314,13 @@ get_footer();
   color: rgba(255,255,255,1);
   font-weight: 500;
   font-size: 3.3rem !important;
+  text-align: center;
+}
+
+.parallax-quote h4 {
+  color: rgba(255,255,255,1);
+  font-weight: 500;
+  font-size: 1.3rem !important;
   text-align: center;
 }
 
@@ -343,23 +369,21 @@ h1.black {
   background-color: #3695EB !important;
 }
 
-.banner.panel {
+.banner.ui.card, .ui.cards>.banner.card {
   background-color: #3695EB !important;
-  padding: 20px;
   height: 300px;
-  width: 25%;
   border-radius: 0px !important;
   border: 0px !important;
-  box-shadow: 0px !important;
+  box-shadow: 0 0px 0px 0 #D4D4D5,0 0 0 0px #D4D4D5;
 }
 
-.banner.panel i {
+.banner.card i {
   margin-top: 0.4rem;
   margin-left: 0.7rem;
   color: rgba(255,255,255,1);
 }
 
-.banner.panel h1 {
+.banner.card h1 {
   position: relative;
   font-size: 1.3em;
   font-weight: 200;
@@ -372,7 +396,12 @@ h1.black {
 }
 
 .active.content h4 {
-  margin: 1rem 0rem 2rem 1rem !important;
+  /*margin: 1rem 0rem 2rem 1rem !important;*/
+}
+
+.info.grid .segment {
+  min-height: 200px;
+  vertical-align: middle;
 }
 
 .footer.container {
