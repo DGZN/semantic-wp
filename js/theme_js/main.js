@@ -9,5 +9,7 @@ jQuery(document).ready(function($){
 	$viewportMeta.attr('content', 'width=device-width,initial-scale=1,maximum-scale=' + (event.type == 'blur' ? 10 : 1));
 	});
 	 /*end*/
+   $('.ui.accordion')
+     .accordion()
+   ;
 });
- 

@@ -13,7 +13,7 @@ class BootstrapNavMenuWalker extends Walker_Nav_Menu {
 
 		$indent = str_repeat( "\t", $depth );
 		$submenu = ($depth > 0) ? ' sub-menu' : '';
-		$output	   .= "\n$indent<ul class=\"dropdown-menu$submenu depth_$depth\">\n";
+		$output	   .= "\n$indent<div class=\"dropdown-menu$submenu depth_$depth\">\n";
 
 	}
 
@@ -26,14 +26,14 @@ class BootstrapNavMenuWalker extends Walker_Nav_Menu {
 		$class_names = $value = '';
 
 		$classes = empty( $item->classes ) ? array() : (array) $item->classes;
-		
+
 		// managing divider: add divider class to an element to get a divider before it.
 		$divider_class_position = array_search('divider', $classes);
 		if($divider_class_position !== false){
 			$output .= "<li class=\"divider\"></li>\n";
 			unset($classes[$divider_class_position]);
 		}
-		
+
 		$classes[] = ($args->has_children) ? 'dropdown' : '';
 		$classes[] = ($item->current || $item->current_item_ancestor) ? 'active' : '';
 		$classes[] = 'menu-item-' . $item->ID;
@@ -65,7 +65,7 @@ class BootstrapNavMenuWalker extends Walker_Nav_Menu {
 
 		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
 	}
-	
+
 
 	function display_element( $element, &$children_elements, $max_depth, $depth=0, $args, &$output ) {
 		//v($element);

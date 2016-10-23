@@ -21,7 +21,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 	 */
 	public function start_lvl( &$output, $depth = 0, $args = array() ) {
 		$indent = str_repeat( "\t", $depth );
-		$output .= "\n$indent<ul role=\"menu\" class=\" dropdown-menu\">\n";
+		$output .= "\n$indent<div role=\"menu\" class=\" dropdown-menu\">\n";
 	}
 
 	/**
@@ -35,6 +35,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 	 * @param object $args
 	 */
 	public function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+
 		$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
 
 		/**
@@ -58,7 +59,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			$class_names = $value = '';
 
 			$classes = empty( $item->classes ) ? array() : (array) $item->classes;
-			$classes[] = 'menu-item-' . $item->ID;
+			$classes[] = 'item ';
 
 			$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
 
@@ -186,7 +187,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 				$fb_output .= '>';
 			}
 
-			$fb_output .= '<ul';
+			$fb_output .= '<div';
 
 			if ( $menu_id )
 				$fb_output .= ' id="' . $menu_id . '"';
@@ -196,7 +197,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 
 			$fb_output .= '>';
 			$fb_output .= '<li><a href="' . admin_url( 'nav-menus.php' ) . '">Add a menu</a></li>';
-			$fb_output .= '</ul>';
+			$fb_output .= '</div>';
 
 			if ( $container )
 				$fb_output .= '</' . $container . '>';
