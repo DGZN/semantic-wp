@@ -56,8 +56,6 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
           </div>
 
-          <h3 class="ui gray header">About Us</h3>
-
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -66,20 +64,24 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
           <br>
 
         </div>
+
+      </div>
+
+      <div class="ui divider">
 
       </div>
 
       <!-- End About Us Panel -->
 
-      <div class="parallax img2">
+        <!-- <div class="parallax img2">
 
-        <div class="parallax-quote">
+          <div class="parallax-quote">
 
-          <!-- <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </h1> -->
 
-        </div>
 
-      </div>
+          </div>
+
+        </div> -->
 
       <!-- Our Team Panel -->
 
@@ -96,8 +98,6 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
               <div class="ui one column grid">
 
                 <div class="column">
-
-                  <h4 class="ui header">Fabulous Introduction</h4>
 
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -334,7 +334,7 @@ h1.black {
 }
 
 .img2 {
-  height: 350px;
+  height: 450px;
   background-image: url('<?php echo get_template_directory_uri().'/img/default-image/bg_quote.jpg'; ?>');
 }
 
@@ -347,6 +347,10 @@ h1.black {
 .img4 {
   height: 150px;
   background-image: url('<?php echo get_template_directory_uri().'/img/default-image/medical_05.jpg'; ?>');
+}
+
+.ui.divider {
+  margin: 2rem 0rem 7rem 0;
 }
 
 
@@ -392,7 +396,7 @@ h1.black {
 }
 
 .ui.styled.accordion, .ui.styled.accordion .accordion {
-  background: #2185D0 !important;
+  background: #3695EB !important;
 }
 
 .active.content h4 {
@@ -400,8 +404,16 @@ h1.black {
 }
 
 .info.grid .segment {
+  box-shadow: 0 0px 0px 0 rgba(34,36,38,.15) !important;
+  border-radius: 0px !important;
   min-height: 200px;
   vertical-align: middle;
+}
+
+.info.grid .segment h4 {
+  position: relative;
+  padding-top: 25%;
+  padding-bottom: 25%;
 }
 
 .footer.container {
